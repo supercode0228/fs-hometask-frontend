@@ -1,0 +1,15 @@
+.user-appointment__item {
+  padding: 10px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.user-appointment__item__time {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-appointment__item__type {
+  font-size: 14px;
+  line-height: 16px;
+}

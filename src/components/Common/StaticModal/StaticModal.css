@@ -1,0 +1,79 @@
+.static-modal-background {
+  position: fixed;
+  z-index: 1000;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(200, 200, 200, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.static-modal-body-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
+.static-modal-body-container--with-scroll {
+  align-items: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.static-modal-body {
+  position: relative;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 576px) {
+  .static-modal-body {
+    width: 100%;
+    height: auto;
+    max-height: 95%;
+    margin: 5%;
+    overflow: auto;
+  }
+}
+
+.static-modal-body--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.static-modal-body--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.static-modal-body--small {
+  width: 30vw;
+  max-width: 320px;
+}
+
+.static-modal-body--medium {
+  width: 50vw;
+  max-width: 700px;
+}
+
+.static-modal-body--big {
+  width: 80vw;
+  max-width: 1500px;
+}
+
+.static-modal-body > form {
+  padding: 16px;
+}

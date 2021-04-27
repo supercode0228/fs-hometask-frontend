@@ -1,0 +1,46 @@
+.user-card {
+  display: flex;
+}
+
+.user-card:hover {
+  cursor: pointer;
+}
+
+.user-card__avatar {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.user-card__info {
+  margin-left: 5px;
+}
+
+.user-card__info__fullname {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.user-card__info__birthday {
+  margin-top: 2px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #A8A7A7;
+}
+
+.user-card__info__number {
+  margin-top: 2px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
